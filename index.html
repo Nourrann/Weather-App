@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather</title>
+
+    <link rel="shortcut icon" href="imgs/cloudy.png" type="image/x-icon" />
+    <!-- Roboto font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body data-bs-target="#navbarr" data-bs-spy="scroll">
+    <!--& Start Header Section &-->
+    <header class="header">
+      <div
+        class="navBar d-flex justify-content-between align-items-center"
+        id="navbarr"
+      >
+        <nav class="navbar navbar-expand-lg navbarEdits w-100">
+          <div class="container">
+            <a
+              class="navbar-brand logo d-flex justify-content-between"
+              href="#"
+            >
+              <img src="imgs/logo@2x.png" alt="" width="64" />
+              <div class="logo-text">
+                <h1 class="title">Wheather</h1>
+                <small>tagline goes here</small>
+              </div>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#news">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#liveCameras">Live Cameras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#photos">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--& End Header Section &-->
+
+    <!--* Start Search Section *-->
+    <section class="search">
+      <div class="container">
+        <form action="" class="locationSearch">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Find your location..."
+          />
+          <button name="searchBtn" id="searchBtn">Find</button>
+        </form>
+      </div>
+    </section>
+    <!--* End Search Section *-->
+
+    <!--^ Start Forecast Section ^-->
+    <section class="forecast">
+      <div class="container">
+        <div class="forecastContainer" id="forecast">
+          <div class="forecastCard today">
+            <div
+              class="forecastHeader d-flex justify-content-between align-items-center"
+              id="today"
+            >
+              <div id="todayName"></div>
+              <div>
+                <span id="todayNum"></span>
+                <span id="todayMonth"></span>
+              </div>
+            </div>
+            <div class="forecastContent" id="current">
+              <div id="location"></div>
+              <div id="degree">
+                <div id="num">
+                  <span id="numm"></span>
+                  <span> <sup>o</sup>C </span>
+                </div>
+                <img id="forecastIcon" src="imgs/banner.png" alt="" />
+              </div>
+              <div id="custom"></div>
+              <div class="forecastDetails">
+                <span>
+                  <img src="imgs/icon-umberella.png" alt="" />
+                  <span id="humidity"></span>
+                </span>
+                <span>
+                  <img src="imgs/icon-wind.png" alt="" />
+                  <span id="wind"></span>
+                </span>
+                <span>
+                  <img src="imgs/icon-compass.png" alt="" />
+                  <span id="windDir"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="forecastCard">
+            <div class="forecastHeader text-center">
+              <div class="nextDay">Monday</div>
+            </div>
+            <div class="forecastContent text-center">
+              <img src="" alt="" class="nextForecastIcon" />
+              <div class="degree">
+                <div class="num">
+                  <span class="nextMax"></span><sup>o</sup>C
+                </div>
+              </div>
+              <small><span class="nextMin"></span><sup>o</sup></small>
+              <div class="nextCustom"></div>
+            </div>
+          </div>
+          <div class="forecastCard">
+            <div class="forecastHeader text-center">
+              <div class="nextDay">Monday</div>
+            </div>
+            <div class="forecastContent text-center">
+              <img src="" alt="" class="nextForecastIcon" />
+
+              <div class="degree">
+                <div class="num">
+                  <span class="nextMax"></span><sup>o</sup>C
+                </div>
+              </div>
+              <small><span class="nextMin"></span><sup>o</sup></small>
+              <div class="nextCustom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--^ End Forecast Section ^-->
+
+    <!--! Start Footer Section !-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6">
+            <form action="" class="locationSearch">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button name="Btn" id="Btn">Subscribe</button>
+            </form>
+            <p class="mt-4 text-center">
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <ul class="icons ms-auto text-sm-center text-lg-end">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      </div>
+    </footer>
+    <!--! End Footer Section !-->
+
+    <!-- JS links -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
